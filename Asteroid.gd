@@ -22,6 +22,6 @@ func _draw():
 	
 	draw_polygon(bounds, colors)
 	
-func _process(delta : float):
+func _process(_delta : float):
 	position.x = wrapf(position.x, 0.0, DisplayServer.window_get_size(0).x)
 	position.y = wrapf(position.y, 0.0, DisplayServer.window_get_size(0).y)

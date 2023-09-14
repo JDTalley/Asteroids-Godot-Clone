@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://Asteroid.gd" id="1_kwdk1"]
 
 [node name="Asteroid" type="RigidBody2D"]
-position = Vector2(200, 200)
 gravity_scale = 0.0
 script = ExtResource("1_kwdk1")
 metadata/_edit_group_ = true
