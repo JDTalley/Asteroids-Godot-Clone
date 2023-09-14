@@ -50,9 +50,11 @@ func _process(delta : float):
 		speed.clamp(-max_check,speed)
 	
 	position += speed * delta
+	position.x = wrapf(position.x, 0.0, DisplayServer.window_get_size(0).x)
+	position.y = wrapf(position.y, 0.0, DisplayServer.window_get_size(0).y)
 
 
-func _on_body_entered(body : RigidBody2D):
+func _on_body_entered(_body : RigidBody2D):
 	hide()
 	hit.emit()
 	$CollisionPolygon2D.set_deferred("disabled", true)
