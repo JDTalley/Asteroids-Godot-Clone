@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://vdmol1852o20"]
+
+[ext_resource type="Script" path="res://Asteroid.gd" id="1_kwdk1"]
+
+[node name="Asteroid" type="RigidBody2D"]
+position = Vector2(200, 200)
+gravity_scale = 0.0
+script = ExtResource("1_kwdk1")
+metadata/_edit_group_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
