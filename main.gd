@@ -8,7 +8,7 @@ var asteroid_count
 
 func player_death():
 	$ScoreTimer.stop()
-	$MobTimer.stop()
+	$AsteroidTimer.stop()
 	
 	
 func new_game():
